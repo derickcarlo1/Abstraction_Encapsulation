@@ -47,5 +47,27 @@ class Fan:
         self.__color = color
 
 # Print program header using pyfiglet and ANSI escape sequences for color
+header = pyfiglet.figlet_format("Fan Program")
+print("\033[1;34m" + header + "\033[0m")  # Blue color for header
+
 # Create an instance of the Fan class
+fan = Fan()
+
 # Demonstrate the usage of the Fan class methods
+print("\n\033[1;33mDemonstrating Fan Class Methods:\033[0m")  # Yellow color and bold style for section header
+
+print("\033[1mFan Speed:\033[0m", fan.get_speed())  # Bold style for attribute name
+fan.set_speed(Fan.FAST)
+print("\033[1mFan Speed:\033[0m", fan.get_speed())
+
+print("\033[1mFan Status:\033[0m", fan.is_on())
+fan.set_on(True)
+print("\033[1mFan Status:\033[0m", fan.is_on())
+
+print("\033[1mFan Radius:\033[0m", fan.get_radius())
+fan.set_radius(8)
+print("\033[1mFan Radius:\033[0m", fan.get_radius())
+
+print("\033[1mFan Color:\033[0m", fan.get_color())
+fan.set_color("red")
+print("\033[1mFan Color:\033[0m", fan.get_color())
