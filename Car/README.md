@@ -1,14 +1,14 @@
-# Car OOP 
+# Car OOP 🚘
 Welcome to the Car Speed Test repository! This repository contains a Python program that simulates a car's speed using the `Car` class. It demonstrates the concepts of object-oriented programming, encapsulation, and abstraction.
 
-## Features
+## Features 🔗
 
 - Create a `Car` object with year model and make attributes
 - Accelerate the car's speed by 5 units
 - Brake the car's speed by 5 units
 - Get the current speed of the car
 
-## How to Run
+## How to Run 💻
 
 To run the program, follow these steps:
 
@@ -18,16 +18,16 @@ To run the program, follow these steps:
 4. Run the following command to execute the `testcar.py` program:
 
     ```bash
-    python testcar.py
+    python cartest.py
     ```
 
 5. The program will display the Car Speed Test header and output the car's speed after accelerating and braking.
 
-## Language Used
+## Language Used 📚
 
 This program is written in Python, a high-level programming language known for its simplicity and readability. Python's object-oriented capabilities make it suitable for implementing classes and creating objects.
 
-## Purpose
+## Purpose ❓
 
 The purpose of this program is to demonstrate the usage of classes, encapsulation, and abstraction in Python. It provides a basic example of modeling a car's speed and controlling its acceleration and braking. The code structure showcases the principles of object-oriented programming and highlights the benefits of encapsulating data within class methods.
 
