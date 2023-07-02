@@ -25,6 +25,25 @@ class Pet:
     def get_age(self):
         return self.__age
     
-# Display welcome message with colored ASCII art
-# Get pet information from the user
-# Display pet information with colored output
+if __name__ == "__main__":
+    # Display welcome message with colored ASCII art
+    ascii_banner = pyfiglet.figlet_format("Welcome to Pet Info")
+    print("\033[1;35m" + ascii_banner + "\033[0m")  # Magenta color
+
+    pet = Pet()
+
+    # Get pet information from the user
+    name = input("Enter the name of your pet: ")
+    pet.set_name(name)
+
+    animal_type = input("Enter the type of animal your pet is: ")
+    pet.set_animal_type(animal_type)   
+
+    age = input("Enter the age of your pet: ")
+    pet.set_age(age)
+
+    # Display pet information with colored output
+    print("\n\033[1;36m*** Pet Information ***\033[0m")  # Cyan color
+    print("\033[1;33mName:\033[0m", pet.get_name())  # Yellow color
+    print("\033[1;33mAnimal Type:\033[0m", pet.get_animal_type())
+    print("\033[1;33mAge:\033[0m", pet.get_age())
